@@ -2,7 +2,6 @@ import React, { useState }from "react";
 import Device from "./Device";
 
 
-
 const api = {
   key: "408aab490d1822580b40a7499b56eb22",
   base: "https://api.openweathermap.org/data/2.5/"

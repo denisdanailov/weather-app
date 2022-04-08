@@ -3,7 +3,6 @@ import React from "react";
   
   function Device(props) {
 
-    const query = props.query;
     const weather = props.weather;
 
     const dateBuilder = (d) => {

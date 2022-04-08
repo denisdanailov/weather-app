@@ -8,7 +8,7 @@ function Logo() {
 
   return (
    
-    <img className='logo' src={log} />
+    <img className='logo' src={log} alt="logo"/>
    
 
   );
