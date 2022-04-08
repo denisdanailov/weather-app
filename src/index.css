@@ -6,24 +6,46 @@
 
 body {
   font-family: 'montseratt', sans-serif;
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+
+.appec {
+  height: 0;
+ 
+}
+
+.root {
+  height: 100vh;
+  background-repeat: no-repeat;
 }
 
 .app {
   background-image: url('./assets/danny-lines-zZOq1CeMSNM-unsplash.jpg');
-  background-size: cover;
-  background-position: bottom;
-  transition:  0.4 ease-out;
+  position: relative;
+  margin: 100px auto;
+  margin-left: 70px;
+  min-width: 360px;
+  min-height: 780px;
+  max-width: 360px;
+  max-height: 780px;
+  border-radius: 40px;
+  /* box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111; */
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .app.warm {
-  background-image: url('./assets/pedro-lastra-Y9utglm0VpQ-unsplash.jpg')
+  background-image: url('./assets/pedro-lastra-Y9utglm0VpQ-unsplash.jpg');
 }
 
 main {
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
-
   padding: 25px;
+}
+
+.logo {
+  width: 250px;
+  padding: 30px;
+  cursor: pointer;
 }
 
 .search-box {
@@ -53,9 +75,10 @@ main {
   transition: 0.4s ease;
 }
 
-.search-box .search-bar:focus {
+ .search:focus {
   background-color: rgba(255, 255, 255, 0.75);
 }
+
 
 .location-box .location {
   color: #FFF;
@@ -102,4 +125,85 @@ main {
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+}
+
+.content, .device {
+  display: inline-block;
+  width: 40%;
+  vertical-align: middle;
+}
+
+
+
+.content h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 54px;
+  color:#e8e2f6;
+  margin-top: 50px;
+  
+}
+
+.content p {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  color:#4a494d;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.content {
+  margin-left: 100px;
+  margin-right: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.search {
+  width: 60%;
+  max-width: 400px;
+  min-width: 300px;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 16px 16px 16px 16px;
+
+
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+@media screen and (max-width: 700px) {
+ 
+
+}
+
+@media screen and (max-width: 550px) {
+  .device {
+    margin-left: -40px;
+  }
+
+  .search-box {
+    margin-left: -40px;
+    margin-bottom: -50px;
+  }
+
+  .weather-box, .location {
+    margin-top: 80px;
+  }
+
+  .content p, h1{
+    padding: 0;
+    width: 170%;
+    margin-left: -30px;
+  }
+
 }
